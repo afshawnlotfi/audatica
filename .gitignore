@@ -1,1 +1,5 @@
+#IDEA configuration
 .idea/
+
+#PYC files
+*.pyc
