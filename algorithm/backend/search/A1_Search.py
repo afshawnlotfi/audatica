@@ -2,10 +2,10 @@ import fnmatch
 import os
 
 from algorithm.backend.A1_Option import A1_Option
-from algorithm.frontend.A1_Search_View import A1_Search_View
+from algorithm.frontend.A1_View.A1_Search_View import A1_Search_View
 
 
-class Searcher:
+class A1_Search:
     def __init__(self, directory):
         self.directory = directory
 

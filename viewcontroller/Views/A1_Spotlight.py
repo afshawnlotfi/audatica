@@ -3,15 +3,14 @@ import sys
 from PyQt4 import QtCore, QtGui, uic
 
 from algorithm.backend.A1_Option import A1_Option
-from algorithm.backend.A1_Search import A1_Search
-from algorithm.backend.search.Searcher import Searcher
-from algorithm.frontend.A1_Search_View import A1_Search_View
+from algorithm.backend.search.A1_Search import A1_Search
+from algorithm.frontend.A1_View.A1_Search_View import A1_Search_View
 
 path=os.path.dirname(os.path.abspath(__file__))
 SpotlightWindowUI,SpotlightWindowBase= uic.loadUiType(os.path.join(path,'UI/spotlight.ui'))
 
 class A1_Spotlight(SpotlightWindowBase, SpotlightWindowUI):
-    def __init__(self,main_directory,directory):
+    def __init__(self,stack,directory):
         '''
 
         :param main_directory: main directory
@@ -19,6 +18,7 @@ class A1_Spotlight(SpotlightWindowBase, SpotlightWindowUI):
         :return:
         '''
         super(A1_Spotlight, self).__init__()
+
         self.directory = directory
 
         #Makes Canvas Fullscreen
@@ -29,6 +29,7 @@ class A1_Spotlight(SpotlightWindowBase, SpotlightWindowUI):
 
 
         #Importing A1_Search to send text to from text widget
+        self.close.clicked.connect(stack.goHome)
 
         self.searchwin=A1_Search
 
@@ -39,7 +40,7 @@ class A1_Spotlight(SpotlightWindowBase, SpotlightWindowUI):
              file_amount, file_order = searcher.search(self.searchEntry.text())
              self.updateSearchUi(searcher, self.directory, file_amount, file_order)
 
-        searcher = Searcher(self.directory)
+        searcher = A1_Search(self.directory)
         textChanged()
 
         #Launching Search Action and connecting it to keystroke

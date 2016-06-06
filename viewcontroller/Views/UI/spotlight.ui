@@ -62,7 +62,7 @@ color: rgb(255, 255, 255);</string>
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="close_search">
+   <widget class="QPushButton" name="close">
     <property name="geometry">
      <rect>
       <x>1350</x>
@@ -94,7 +94,7 @@ background-color: rgba(255, 255, 255, 0);</string>
      <string/>
     </property>
     <property name="icon">
-     <iconset resource="../../icons.qrc">
+     <iconset resource="../../../icons.qrc">
       <normaloff>:/icons/cancel.png</normaloff>:/icons/cancel.png</iconset>
     </property>
     <property name="iconSize">
@@ -274,7 +274,7 @@ background-color: rgba(255, 255, 255, 0);</string>
      <string/>
     </property>
     <property name="icon">
-     <iconset resource="../../icons.qrc">
+     <iconset resource="../../../icons.qrc">
       <normaloff>:/icons/search.png</normaloff>:/icons/search.png</iconset>
     </property>
     <property name="iconSize">
@@ -320,7 +320,7 @@ border:0px;</string>
    <zorder>background</zorder>
    <zorder>mask</zorder>
    <zorder>searchEntry</zorder>
-   <zorder>close_search</zorder>
+   <zorder>close</zorder>
    <zorder>line_2</zorder>
    <zorder>line</zorder>
    <zorder>file_scroll</zorder>
@@ -330,24 +330,7 @@ border:0px;</string>
   </widget>
  </widget>
  <resources>
-  <include location="../../icons.qrc"/>
+  <include location="../../../icons.qrc"/>
  </resources>
- <connections>
-  <connection>
-   <sender>close_search</sender>
-   <signal>clicked()</signal>
-   <receiver>Search</receiver>
-   <slot>lower()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>1409</x>
-     <y>36</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>1519</x>
-     <y>88</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>
