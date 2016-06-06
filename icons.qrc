@@ -15,10 +15,9 @@
 	<file>icons/add.png</file>
 	<file>icons/projects.png</file>
 	<file>icons/apps.png</file>
-	<file>icons/Seaside.jpg</file>
-	<file>icons/circlebord.png</file>
-	<file>icons/Blurred.jpg</file>
-	<file>icons/continue.png</file>
+	<file>icons/background.jpg</file>
+	<file>icons/circle_border.png</file>
+	<file>icons/blurred.jpg</file>
 </qresource>
 
 </RCC>
