@@ -8,8 +8,6 @@ class FileInfoView:
         pass
 
     def display_info(self, info_scroll, file_path):
-
-
         option_class = FileInfoFrame()
         scroll_item_layout, scroll_height = option_class.display_frame(file_path)
         if scroll_height > 500:

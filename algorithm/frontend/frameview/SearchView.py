@@ -11,7 +11,7 @@ class SearchView:
         self.scroll_content = QtGui.QWidget(file_scroll)
         self.file_scroll = file_scroll
 
-    def display_files(self,file_list, file_path, button_callback):
+    def display_files(self, file_list, file_path, button_callback):
         item_count = len(file_list)
 
         file_per_row = 3

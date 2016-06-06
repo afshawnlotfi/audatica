@@ -1,4 +1,4 @@
-from PIL import ImageFilter, Image, ImageOps
+from PIL import ImageFilter, Image
 
 
 class Blur:

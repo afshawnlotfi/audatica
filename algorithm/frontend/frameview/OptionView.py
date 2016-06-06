@@ -2,6 +2,7 @@ from PyQt4 import QtCore, QtGui
 from functools import partial
 from algorithm.frontend.iconassignment.OptionIcon import OptionIcon
 
+
 class OptionView:
     # Defining Scroll Area and Scroll Layout
     def __init__(self, option_container):
@@ -9,7 +10,7 @@ class OptionView:
         self.option_container = option_container
 
     def display_options(self, option_icon_path, option_callback):
-        #option_path =
+        # option_path =
         item_count = len(option_icon_path)
         option_per_row = 4
         column = 0
@@ -17,8 +18,8 @@ class OptionView:
         scroll_layout = QtGui.QGridLayout(self.scroll_content)
         self.scroll_content.setLayout(scroll_layout)
 
-        def button_clicked(i):
-            option_callback[i]()
+        def button_clicked(callback_num):
+            option_callback[callback_num]()
 
         # Loop for Button File Assignment
         for i in range(0, item_count):
@@ -39,7 +40,6 @@ class OptionView:
             option_button.setIconSize(QtCore.QSize(50, 50))
             option_button.setFocusPolicy(QtCore.Qt.NoFocus)
             option_button.setIcon(QtGui.QIcon(icon))
-
 
             # Putting Button and Label in Layout
             scroll_item_layout = QtGui.QVBoxLayout()

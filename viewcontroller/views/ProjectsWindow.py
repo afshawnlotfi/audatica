@@ -1,7 +1,6 @@
 import os
 from PyQt4 import uic
 
-
 # Importing UI
 path = os.path.dirname(os.path.abspath(__file__))
 ProjectsWindowUI, ProjectsWindowBase = uic.loadUiType(os.path.join(path, 'UI/projects.ui'))

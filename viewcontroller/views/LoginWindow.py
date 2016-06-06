@@ -3,8 +3,6 @@ import os
 import uuid
 from PyQt4 import uic
 
-from viewcontroller.views.HomeWindow import HomeWindow
-
 path = os.path.dirname(os.path.abspath(__file__))
 LoginWindowUI, LoginWindowBase = uic.loadUiType(os.path.join(path, 'UI/login.ui'))
 

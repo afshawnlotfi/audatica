@@ -8,12 +8,7 @@ class ItemInfo:
         pass
 
     def file_information(self, file_path):
-        """
 
-        :param filename: file to gather information
-        :param path: path to file
-        :return:
-        """
         file_name = ntpath.basename(file_path)
 
         # Finding file icon

@@ -8,12 +8,7 @@ class SearchIcon:
         pass
 
     def load_icons(self, file_path):
-        """
 
-        :param path: path to file
-        :param filename: file to initialize icon
-        :return:
-        """
 
         global icon
         check_dir = os.path.isdir(file_path)
