@@ -8,7 +8,7 @@ class OptionView:
         self.scroll_content = QtGui.QWidget(option_container)
         self.option_container = option_container
 
-    def display_options(self, option_icon_path):
+    def display_options(self, option_icon_path, option_callback):
         #option_path =
         item_count = len(option_icon_path)
         option_per_row = 4
@@ -16,6 +16,10 @@ class OptionView:
         row = 0
         scroll_layout = QtGui.QGridLayout(self.scroll_content)
         self.scroll_content.setLayout(scroll_layout)
+
+        def button_clicked(i):
+            option_callback[i]()
+
         # Loop for Button File Assignment
         for i in range(0, item_count):
             if row == option_per_row:
@@ -25,7 +29,7 @@ class OptionView:
             # Defining Label and Button
             option_button = QtGui.QPushButton()
 
-            #file_button.clicked.connect(partial(button_callback, option_list[i]))
+            option_button.clicked.connect(partial(button_clicked, i))
 
             # Getting Correct Icons to Display on Button
             icons_class = OptionIcon()
