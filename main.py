@@ -7,6 +7,7 @@ from viewcontroller.views.HomeWindow import HomeWindow
 from viewcontroller.views.SpotlightWindow import SpotlightWindow
 from viewcontroller.widgets.StackWidget import StackWidget
 
+# Main function -- called when the application starts
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
 
