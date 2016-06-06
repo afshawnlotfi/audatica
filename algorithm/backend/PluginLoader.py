@@ -14,6 +14,7 @@ class PluginLoader:
             location = os.path.join(PluginFolder, i)
             if not os.path.isdir(location) or not MainModule + ".py" in os.listdir(location):
                 continue
+            #Ordering List with priority
             # mylist=['a','b','c','d','e']
             # myorder=[3,2,0,1,4]
             # mylist = [ mylist[i] for i in myorder]
