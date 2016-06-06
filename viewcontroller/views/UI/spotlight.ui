@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1440</width>
+    <width>1443</width>
     <height>867</height>
    </rect>
   </property>
@@ -294,14 +294,20 @@ background-color: rgba(255, 255, 255, 0);</string>
     <property name="geometry">
      <rect>
       <x>1110</x>
-      <y>620</y>
+      <y>660</y>
       <width>321</width>
-      <height>161</height>
+      <height>121</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);
 border:0px;</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
     </property>
     <property name="widgetResizable">
      <bool>true</bool>
@@ -312,7 +318,7 @@ border:0px;</string>
        <x>0</x>
        <y>0</y>
        <width>321</width>
-       <height>161</height>
+       <height>121</height>
       </rect>
      </property>
     </widget>

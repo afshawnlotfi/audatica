@@ -15,12 +15,12 @@ if __name__ == "__main__":
     # Importing stack widget
     stack = StackWidget()
     # Importing views
-    login_window = LoginWindow(stack)
+    #login_window = LoginWindow(stack)
     home_window = HomeWindow(stack)
     spotlight_window = SpotlightWindow(stack, "files/search/")
 
     # Adding views to stack widget
-    stack.addWidget(login_window)
+    #stack.addWidget(login_window)
     stack.addWidget(home_window)
     stack.addWidget(spotlight_window)
 

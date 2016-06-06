@@ -12,7 +12,7 @@ class StackWidget(QStackedWidget):
         QStackedWidget.setCurrentIndex(self, index)
 
     def go_home(self):
-        self.set_index(1)
+        self.set_index(0)
 
     def go_search(self):
-        self.set_index(2)
+        self.set_index(1)

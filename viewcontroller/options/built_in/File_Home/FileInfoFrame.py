@@ -8,12 +8,12 @@ class FileInfoFrame:
     def __init__(self):
         pass
 
-    def display_frame(self, filename, path):
+    def display_frame(self, file_path):
 
         scroll_item_layout = QtGui.QVBoxLayout()
         scroll_height = 420
         info_class = ItemInfo()
-        icon, filename, file_size, created, modified = info_class.file_information(filename, path)
+        icon, filename, file_size, created, modified = info_class.file_information(file_path)
 
         file_icon = {"item": QtGui.QPushButton()}
         file_icon["item"].setIconSize(QtCore.QSize(230, 230))

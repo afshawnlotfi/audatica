@@ -3,11 +3,11 @@ import os
 from PyQt4 import QtGui
 
 
-class SearchIcons:
+class SearchIcon:
     def __init__(self):
         pass
 
-    def load_icons(self, path, filename):
+    def load_icons(self, file_path):
         """
 
         :param path: path to file
@@ -16,13 +16,13 @@ class SearchIcons:
         """
 
         global icon
-        check_dir = os.path.isdir(path + filename)
+        check_dir = os.path.isdir(file_path)
         if str(check_dir) == "False":
-            file_type = str(imghdr.what(path + filename))
+            file_type = str(imghdr.what(file_path))
             if file_type == "None":
                 icon = QtGui.QPixmap(":/icons/file.png")
             else:
-                icon = QtGui.QPixmap(path + filename)
+                icon = QtGui.QPixmap(file_path)
         elif str(check_dir) == "True":
-            icon = QtGui.QPixmap(path + filename + "/%s.jpg" % filename)
+            icon = QtGui.QPixmap(file_path + "/cover.jpg")
         return icon

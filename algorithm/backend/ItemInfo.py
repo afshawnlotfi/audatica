@@ -1,34 +1,35 @@
 import os
 import time
-from algorithm.frontend.iconassignment.SearchIcon import SearchIcons
-
+from algorithm.frontend.iconassignment.SearchIcon import SearchIcon
+import ntpath
 
 class ItemInfo:
     def __init__(self):
         pass
 
-    def file_information(self, filename, path):
+    def file_information(self, file_path):
         """
 
         :param filename: file to gather information
         :param path: path to file
         :return:
         """
+        file_name = ntpath.basename(file_path)
 
         # Finding file icon
-        icons_class = SearchIcons()
-        icon = icons_class.load_icons(path, filename)
+        icons_class = SearchIcon()
+        icon = icons_class.load_icons(file_path)
 
         # Looks up item size
-        file_size = "%.2f MB" % (os.path.getsize(path + filename) / float(1000000))
+        file_size = "%.2f MB" % (os.path.getsize(file_path) / float(1000000))
         # Looks up the date of Modification
         modified = "Modified: %s" % time.strftime('%B %d,%Y at %l:%M %p',
-                                                  time.localtime(os.path.getmtime(path + filename)))
+                                                  time.localtime(os.path.getmtime(file_path)))
 
         # Looks up the date of Creation
         created = "Created: %s" % time.strftime('%B %d,%Y at %l:%M %p',
-                                                time.localtime(os.path.getctime(path + filename)))
+                                                time.localtime(os.path.getctime(file_path)))
 
         # Displays in respective icons display
 
-        return icon, filename, file_size, created, modified
+        return icon, file_name, file_size, created, modified

@@ -9,5 +9,5 @@ class Search:
     def search(self, search_string):
         # Organizing files that start with keyword
         file_order = [s for s in self.file_sort if s.startswith(search_string)]
-        file_amount = len(file_order)
-        return file_amount, file_order
+
+        return file_order
