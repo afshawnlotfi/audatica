@@ -1,6 +1,6 @@
 # audaticaos
 
-A GUI written in PyQt that's creativitity is up to you
+A GUI written in PyQt thats creativitity is up to you
 
 ![alt tag](https://github.com/afshawnlotfi/audaticaos/blob/master/ui1.png)
 GUI Home Page
