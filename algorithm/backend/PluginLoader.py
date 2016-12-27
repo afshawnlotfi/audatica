@@ -1,7 +1,7 @@
 import os
 from importlib import import_module
 
-PluginFolder = "/home/audatica/PycharmProjects/audatica1-ui/plugins"
+PluginFolder = os.getcwd() +  "/plugins"
 MainModule = "Plugin"
 
 
