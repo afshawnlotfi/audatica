@@ -1,0 +1,9 @@
+# audaticaos
+
+A GUI written in PyQt that's creativitity is up to you
+
+![alt tag](https://github.com/afshawnlotfi/audaticaos/blob/master/ui1.png)
+GUI Home Page
+
+![alt tag](https://github.com/afshawnlotfi/audaticaos/blob/master/ui2.png)
+GUI File Search
