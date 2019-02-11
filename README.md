@@ -1,4 +1,4 @@
-# audaticaos
+# audatica
 
 A GUI written in PyQt thats creativitity is up to you. Stay tuned for new verison.
 
