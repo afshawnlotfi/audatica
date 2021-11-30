@@ -1,0 +1,23 @@
+<RCC>
+<qresource>
+
+	<file>icons/search.png</file>
+	<file>icons/contacts.png</file>
+	<file>icons/music.png</file>
+	<file>icons/send.png</file>
+	<file>icons/more.png</file>
+	<file>icons/cancel.png</file>
+	<file>icons/setting.png</file>
+	<file>icons/tavis.png</file>
+	<file>icons/file.png</file>
+	<file>icons/launch.png</file>
+	<file>icons/delete.png</file>
+	<file>icons/add.png</file>
+	<file>icons/projects.png</file>
+	<file>icons/apps.png</file>
+	<file>icons/background.jpg</file>
+	<file>icons/circle_border.png</file>
+	<file>icons/blurred.jpg</file>
+</qresource>
+
+</RCC>
